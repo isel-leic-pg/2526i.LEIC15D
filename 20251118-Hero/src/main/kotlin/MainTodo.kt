@@ -83,18 +83,25 @@ fun Canvas.drawHero(p: Cell) {
 }
 
 
-//TODO: (3)
+//DONE: (3)
 fun KeyEvent.toDir(): Dir? = when(code) {
-
+    LEFT_CODE -> Dir.LEFT
+    RIGHT_CODE -> Dir.RIGHT
+    UP_CODE -> Dir.UP
+    DOWN_CODE -> Dir.DOWN
+    else -> null
 }
 
-//TODO: (4)
+//DONE: (4)
 operator fun Cell.plus(dir: Dir): Cell = when(dir) {
-
+    Dir.LEFT -> Cell(col-1, row)
+    Dir.RIGHT -> Cell(col+1, row)
+    Dir.UP -> Cell(col, row-1)
+    Dir.DOWN -> Cell(col, row+1)
 }
 
-//TODO: (5)
-fun Cell.isInGrid() = ...
+//DONE: (5)
+fun Cell.isInGrid() = col in 0..<GRID_WIDTH && row in 0..<GRID_HEIGHT
 
 
 
