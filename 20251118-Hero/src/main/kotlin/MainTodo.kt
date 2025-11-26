@@ -1,6 +1,6 @@
 import pt.isel.canvas.*
 
-
+/*
 const val CELL_SIZE = 128
 const val GRID_WIDTH = 5
 const val GRID_HEIGHT = 3
@@ -105,3 +105,5 @@ fun Cell.isInGrid() = col in 0..<GRID_WIDTH && row in 0..<GRID_HEIGHT
 
 
 
+
+ */
