@@ -1,5 +1,7 @@
-import pt.isel.canvas.*
 
+/*Based on the code developed by Prof. Pedro Pereira for class 2526i.LEIC11D (https://github.com/isel-leic-pg/2526i.LEIC11D/tree/main/Hero).*/
+
+import pt.isel.canvas.*
 
 const val CELL_SIZE = 128
 const val GRID_WIDTH = 5
