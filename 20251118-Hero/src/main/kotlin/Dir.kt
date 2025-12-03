@@ -1,1 +1,0 @@
-enum class Dir { LEFT, RIGHT, UP, DOWN }

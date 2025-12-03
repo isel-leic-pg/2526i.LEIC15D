@@ -57,12 +57,6 @@ fun main() {
 }
 
 
-private fun updateView(arena: Canvas, pos: Cell) {
-    arena.erase()
-    arena.drawGrid()
-    arena.drawHero(pos)
-}
-
 //DONE: (3)
 fun KeyEvent.toDirection(): Direction? = when(code) {
     LEFT_CODE -> Direction.LEFT
