@@ -12,7 +12,3 @@ operator fun Cell.plus(direction: Direction): Cell = when(direction) {
 //DONE: (5)
 fun Cell.isInGrid() = col in 0..<GRID_WIDTH && row in 0..<GRID_HEIGHT
 
-
-fun allCells(): List<Cell> = List(GRID_WIDTH*GRID_HEIGHT) { idx ->
-    Cell(col = idx % GRID_WIDTH, row = idx / GRID_WIDTH)
-}
