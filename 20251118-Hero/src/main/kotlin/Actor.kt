@@ -8,12 +8,15 @@ data class Actor(val cell: Cell, val direction: Direction)
 
 
 
+//TODO:
+val allCells =
+
 /**
  * Generates a list of random robot actors, excluding a specified cell.
  * @param exclude The cell to exclude from robot placement.
  * @return A list of actors placed in random cells without overlapping.
  */
-fun randomRobots(exclude: Cell): List<Actor> = (allCells() - exclude)
-    .shuffled()
-    .take(MAX_ROBOTS)
-    .map { Actor(it, Direction.DOWN) }
+ //TODO:
+fun randomRobots(exclude: Cell): List<Actor> = 
+
+
